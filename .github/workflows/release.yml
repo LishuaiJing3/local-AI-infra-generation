@@ -25,6 +25,8 @@ jobs:
           uv run pip install python-semantic-release pytest build
 
       - name: Test with Pytest
+        env:
+          PYTHONPATH: src
         run: |
           uv run pytest
 
