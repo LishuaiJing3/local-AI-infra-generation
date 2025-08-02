@@ -58,7 +58,7 @@ where = ["src"]
 
 [tool.semantic_release]
 version_source = "toml"
-version_toml = "pyproject.toml:project.version"
+version_toml = ["pyproject.toml:project.version"]
 branch = "main"
 changelog_file = "CHANGELOG.md"
 # Use uv to build the package
